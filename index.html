@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        var num = prompt('entre com um numero');
+
+        //0 = 0
+        //1 = 1
+        //2 = 10
+        //3 = 11
+        //4 = 100
+
+
+        var sobra;
+        var resultado;
+
+        var resultSet=[];
+
+        while(num !=1){
+            sobra = num%2;;
+            resultado = Math.floor(num/2);
+
+            resultSet.push(sobra);
+            num = resultado;
+            if(num ==1){
+                resultSet.push(num);
+            }
+
+        }
+
+        alert(resultSet.reverse().join(''));
+
+
+
+    </script>
+    
+</body>
+</html>
